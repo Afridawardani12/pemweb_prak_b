@@ -1,0 +1,57 @@
+Pertemuan ke 1 Praktikum
+Nama : Afrida Wardani
+NIM : 192410101002
+
+localhost --> untuk mengakses php
+
+contoh nampilin program di php :
+<?php
+echo "Hello word:":
+?>
+
+echo = barisnya ke kanan
+untuk memasukkan php ke html <?php [kodingan html] ?>
+
+cara buat variabel
+$angka = 1;
+
+tipe data
+a. integer --> $contoh = 1;
+b. string --> $contoh_str = "abc";
+
+array --> $contoh_arr = [];
+double --> $contoh_double = 1.1;
+
+percabangan 
+== bernilai sama / true
+=== bernilai tidak sama / false (digunakan juga untuk mengecek tipe datanya apakah sama atau tidak)
+<?php
+
+var_dump
+fungsi var_dump digunakan untuk mencetak output ke browser, lebih tepatnya mengetahui informasi pada suatu nilai variabel. var_dump merupakan fungsi, sehingga dalam penulisannya, kita harus menggunakan tanda kurung.
+
+array index : mencari array sesuai indexnya
+array assosciative : untuk mengatasi jika array index dirubah dan data berubah
+$mhs = [
+nama == 'Afrida',
+nim == '192410101002',
+usia == '19'
+];
+
+foreach ($array as $value) {
+    echo $value . " ;
+}
+// berguna untuk melakukan loop seusai yang diinginkan//
+
+untuk menampilkan semua array digunakan operasi foreach
+dengan cara:
+<? foreach ($students as $student) : ?>
+lalu dikasih tabel(html)
+
+switch = sama dengan if tp gk banyak ekspresinya
+<?php
+switch [$student] {
+case $student [
+echo
+break
+?>
