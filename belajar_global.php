@@ -1,4 +1,4 @@
-<?php
+<?php require 'tabung.php';
     // $_POST['nama'] = "Afrida Wardani";
     if (isset($_POST['submit_btn'])){
         if (strlen($_POST['diameter'])>0){
