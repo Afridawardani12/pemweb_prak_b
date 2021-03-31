@@ -7,15 +7,25 @@
             echo "Isi diameter ";
         }
     }
+    $luas = 0;
+    $volume = 0;
+
     if (isset($_POST['button_submit'])){
         $diameter = $_POST['diameter'];
         $tinggi = $_POST['tinggi'];
 
-        $r = $diameter  / 2;
+        $r = $diameter / 2;
         $luas = 3.14 * $diameter * $tinggi;
-        $volume = 3.14 * $r * $r *tinggi;
-        echo "Diameter $diameter"<br/>;
-        echo "Tinggi $tinggi" <br/>;
+        $volume = 3.14 * $r * $r *$tinggi;
+
+        echo "Diameter $diameter <br/>";
+        echo "Tinggi $tinggi <br/>";
+    }
+    $tabung = new Tabung;
+    if (isset($_POST['button_submit'])){
+        $tabung->setDiameter($_POST['diameter']);
+        $tabung->setTinggi($_POST['tinggi']);
+        $tabung->hitungLuas();
     }
 ?>
 <!DOCTYPE html>
@@ -39,8 +49,8 @@
     <hr>
 
 <ul>
-    <li>Luas Sisi : 0</li>
-    <li>Volume : 0</li>
+    <li>Luas Selimut : <?= is_null($tabung) 'Tabung Kosong' ? $tabung->getLuasSelimut(); </li>
+    <li>Volume : </li>
 </ul>
 </body>
 </html>
