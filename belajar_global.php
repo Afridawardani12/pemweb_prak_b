@@ -1,3 +1,23 @@
+<?php
+    // $_POST['nama'] = "Afrida Wardani";
+    if (isset($_POST['submit_btn'])){
+        if (strlen($_POST['diameter'])>0){
+            echo "login !";
+        } else {
+            echo "Isi diameter ";
+        }
+    }
+    if (isset($_POST['button_submit'])){
+        $diameter = $_POST['diameter'];
+        $tinggi = $_POST['tinggi'];
+
+        $r = $diameter  / 2;
+        $luas = 3.14 * $diameter * $tinggi;
+        $volume = 3.14 * $r * $r *tinggi;
+        echo "Diameter $diameter"<br/>;
+        echo "Tinggi $tinggi" <br/>;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +34,13 @@
         <input type="text" name="tinggi"> <br><br>
         <button>Hitung</button>
 
-        <hr>
-
-        <ul>
-            <li>Luas Sisi : 0</li>
-            <li>Volume : 0</li>
-        </ul>
+       
     </form>
+    <hr>
+
+<ul>
+    <li>Luas Sisi : 0</li>
+    <li>Volume : 0</li>
+</ul>
 </body>
 </html>
