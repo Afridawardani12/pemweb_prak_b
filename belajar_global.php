@@ -49,7 +49,7 @@
     <hr>
 
 <ul>
-    <li>Luas Selimut : <?= is_null($tabung) 'Tabung Kosong' ? $tabung->getLuasSelimut(); </li>
+    <li>Luas Selimut : <?= is_null($tabung) 'Tabung Kosong' ? $tabung->getLuasSelimut(); ?></li>
     <li>Volume : </li>
 </ul>
 </body>

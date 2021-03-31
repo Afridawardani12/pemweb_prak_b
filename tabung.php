@@ -6,6 +6,11 @@
         private $luas_selimut;
         private $phi = 3.14;
 
+        //public fuction __construct(sd, st){
+            $this->diameter = $d;
+            $this->tinggi = $t;
+        }
+
         public function setDiameter($value){
             $this->diameter = $value;
             $this->r = $this->diameter /2;
